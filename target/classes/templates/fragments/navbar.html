@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #11111F;" th:fragment="navbar">
+
+  <!-- Logo y enlace a la página principal -->
+  <div class="navbar-brand mr-auto">
+    <a href="/">
+      <img th:src="@{/images/logo.png}" class="logo" alt="Logo" style="max-height: 80px;">
+    </a>
+  </div>
+
+  <!-- Botón para colapsar -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Contenido de la barra de navegación -->
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sobrenosotros">Sobre Nosotros</a>
+      </li>
+
+      <li class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle" href="#" id="propiedadesDropdown" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Propiedades
+        </a>
+        <div class="dropdown-menu" aria-labelledby="propiedadesDropdown">
+          <a class="dropdown-item" href="/propiedad/listar">Lista de Propiedades</a>
+          <div sec:authorize="hasRole('ROLE_ENTE') or hasRole('ROLE_ADMIN')">
+            <a class="dropdown-item" href="/propiedad/registrar">Agregar Propiedades</a>
+          </div>
+          <div sec:authorize="hasRole('ROLE_ENTE') or hasRole('ROLE_ADMIN')">
+            <a class="dropdown-item" href="/oferta/ofertas-ente">Ofertas de Propiedades</a>
+          </div>
+          <div sec:authorize="hasRole('ROLE_ENTE')">
+            <a class="dropdown-item" href="/cita/citas-ente">Citas de Propiedades</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Menú desplegable "Usuarios" -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="editorialesDropdown" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Usuarios
+        </a>
+        <div class="dropdown-menu">
+          <!-- Opciones del menú desplegable "Usuarios" con respecto al estado de sesión -->
+          <th:block th:if="${session.usuariosession == null}">
+            <a class="dropdown-item" href="/usuario/registrar">Crear Cuenta</a>
+            <a class="dropdown-item" href="/login">Iniciar Sesión</a>
+          </th:block>
+          <th:block th:if="${session.usuariosession != null}">
+            <a class="dropdown-item" href="/usuario/perfil">Perfil</a>
+            <a class="dropdown-item" href="/logout">Cerrar Sesión</a>
+          </th:block>
+        </div>
+      </li>
+
+      <!-- Menú desplegable "Admin" -->
+      <div sec:authorize="hasRole('ROLE_ADMIN')">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="editorialesDropdown" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Admin
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/admin/listar-propiedades">Administrar Propiedades </a>
+            <a class="dropdown-item" href="/usuario/listar">Administrar Usuarios </a>
+            <a class="dropdown-item" href="/oferta/ofertas">Administrar Ofertas </a>
+            <a class="dropdown-item" href="/cita/listar">Administrar Citas </a>
+            <a class="dropdown-item" href="/cargar/usuarios">Cargar 20 Usuarios </a>
+            <a class="dropdown-item" href="/cargar/roles">Cargar Roles </a>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </div>
+</nav>

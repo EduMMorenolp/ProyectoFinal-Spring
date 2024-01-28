@@ -1,0 +1,188 @@
+/* Estilos del carrusel */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(0%);
+  text-align: center;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#carouselExample {
+  max-width: 100%;
+  height: 220px; 
+  overflow: hidden; 
+}
+
+/* Estilos de la sección principal */
+.principal {
+  background-image: linear-gradient(#00000066, #00000066),
+    url(../images/ba1.jpg) !important;
+  height: 80vh !important;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.principal img {
+  max-width: none;
+  max-height: 300px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.principal p,
+.principal h6 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+}
+
+.banner-info {
+  flex: 1;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.banner-info button {
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.custom-btn {
+  background-color: #11111f;
+  color: #ffffff;
+  border: 2px solid #97999b;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: #555;
+  color: #d9d9d9;
+  border-color: #d9d9d9;
+}
+
+/* Estilos para la card personalizada */
+.custom-card {
+  background-color: #11111f;
+  color: white;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icon {
+  margin-right: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos para LISTAS DE USUARIO las tarjetas de usuario */
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+  padding: 10px;
+}
+
+@font-face {
+  font-family: 'Aero Matics Stencil Regular';
+  src: url('/fonts/Aero Matics Stencil Regular.ttf') format('truetype');
+}
+
+.card-title2 {
+  font-family: 'Aero Matics Stencil Regular', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+.logo {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.logopropiedad {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.logopropiedad:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  filter: brightness(1.2); 
+}
+
+.logopropiedad:focus {
+  outline: none;
+}
+
+/* Estilos para los botones en la tarjeta */
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+/* Estilos para la paginación */
+.pagination {
+  margin-top: 20px;
+}
+
+/* Estilos para los botones de paginación */
+.page-link {
+  cursor: pointer;
+}
+
+/* Formulario de OFERTA */
+
+.form-oferta {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+ footer{
+  bottom:0px;
+  position:relative;
+  width: 100%; 
+}
+
+.text-bold {
+  font-weight: bold;
+}
