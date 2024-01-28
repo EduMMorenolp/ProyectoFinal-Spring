@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.vanguardiapropiedades.inmobiliaria.InmobiliariaApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.985 s - in com.vanguardiapropiedades.inmobiliaria.InmobiliariaApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.5 s - in com.vanguardiapropiedades.inmobiliaria.InmobiliariaApplicationTests
