@@ -36,6 +36,10 @@ La aplicación está dirigida a empresas inmobiliarias, dueños, futuros comprad
 - Bootstrap (para el diseño)
 - Base de datos MySQL
 
+## Herramientas Utilizadas 
+
+[![My Skills](https://skillicons.dev/icons?i=java,spring,mysql,bootstrap,css,html&theme=light)](https://skillicons.dev)
+
 ## Instalación y Configuración
 
 1. Clona el repositorio
