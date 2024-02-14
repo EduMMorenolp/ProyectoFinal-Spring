@@ -38,7 +38,7 @@ La aplicación está dirigida a empresas inmobiliarias, dueños, futuros comprad
 
 ## Herramientas Utilizadas 
 
-[![My Skills](https://skillicons.dev/icons?i=java,spring,mysql,bootstrap,css,html&theme=light)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,spring,mysql,bootstrap,css,html,git,github&theme=light)](https://skillicons.dev)
 
 ## Instalación y Configuración
 
