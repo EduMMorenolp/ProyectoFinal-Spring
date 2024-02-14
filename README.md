@@ -1,6 +1,6 @@
 # Proyecto "PROPIEDADES VANGUARDISTAS"
 
-![PROPIEDADES VANGUARDISTAS Logo](src\main\resources\static\images\logo.png)
+![PROPIEDADES VANGUARDISTAS Logo](https://github.com/EduMMorenolp/ProyectoFinal-Spring/blob/EduardoMoreno/src/main/resources/static/images/logo.png)
 
 ## Descripción del Proyecto
 
